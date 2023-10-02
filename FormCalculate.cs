@@ -44,6 +44,13 @@ namespace Tina.Practice.CountMoney
                 MessageBox.Show($"輸入錯誤:{ex.Message}");
             }
         }
-        
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            textBoxResult.Clear();
+            textBoxTotal.Clear();
+            textBoxPeople.Clear();
+            textBoxTip.Clear();    
+        }
     }
 }
